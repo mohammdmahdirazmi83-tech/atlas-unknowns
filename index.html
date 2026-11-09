@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>اطلس ناشناخته‌ها</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#090909;color:#f4ead4;font:17px Tahoma,Arial;line-height:1.9}header,main,footer{max-width:1050px;margin:auto;padding:22px}header{border-bottom:1px solid #80652f;color:#e6c16d;font-weight:bold}.hero{text-align:center;padding:64px 18px;background:linear-gradient(130deg,#38280f,#090909)}h1,h2{color:#e6c16d}.hero p{max-width:650px;margin:12px auto}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.card{background:#171717;border:1px solid #594626;border-radius:14px;padding:20px}.card p{color:#c9bda6}input,button{font:inherit;padding:11px;border-radius:8px;border:1px solid #a18243}input{max-width:65%;background:#171717;color:white}button{background:#dfbd70;color:#17120a;cursor:pointer}footer{text-align:center;border-top:1px solid #594626;color:#b8aa8d}
+</style></head><body>
+<header>اطلس ناشناخته‌ها | دانش، علم و دنیای شگفت‌انگیز</header>
+<main><section class="hero"><h1>به دنیای ناشناخته‌ها خوش آمدید</h1><p>از رازهای کیهان تا شگفتی‌های طبیعت؛ هر پرسش، آغاز یک ماجراجویی است.</p><input id="q" placeholder="موضوع مورد نظر را جست‌وجو کن"><button onclick="searchTopics()">جست‌وجو</button></section>
+<h2>جهان‌های دانش</h2><section class="grid">
+<article class="card"><h2>فضا و کیهان</h2><p>سیاره‌ها، ستارگان و کهکشان‌ها.</p></article>
+<article class="card"><h2>تاریخ و تمدن</h2><p>سفر در زمان و آشنایی با تمدن‌های جهان.</p></article>
+<article class="card"><h2>دانشمندان و اختراعات</h2><p>زندگی دانشمندان و ایده‌هایی که جهان را تغییر دادند.</p></article>
+<article class="card"><h2>طبیعت و حیات</h2><p>جانوران، گیاهان و شگفتی‌های زمین.</p></article>
+<article class="card"><h2>کشورها و فرهنگ‌ها</h2><p>جغرافیا، تاریخ و فرهنگ مردم جهان.</p></article>
+<article class="card"><h2>دانش و علوم</h2><p>فیزیک، شیمی و زیست‌شناسی به زبان ساده.</p></article>
+</section><h2>درباره اطلس</h2><p>پروژه‌ای برای علاقه‌مندان به علم، تاریخ، طبیعت و دانستنی‌های جهان.</p><p>سازنده: محمد مهدی رزمی</p></main>
+<footer>© اطلس ناشناخته‌ها</footer>
+<script>function searchTopics(){const q=document.getElementById('q').value.trim().toLocaleLowerCase('fa');document.querySelectorAll('.card').forEach(c=>c.hidden=!!q&&!c.innerText.toLocaleLowerCase('fa').includes(q));}</script>
+</body></html>
